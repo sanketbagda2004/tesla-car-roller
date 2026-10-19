@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Roadster Loop – Night Ramp Stunt Game</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="game"></div>
+<div id="hud">
+  <div class="stat"><b id="hSpd">0</b><small>MPH</small></div>
+  <div class="stat"><b id="hAlt">0</b><small>ALT FT</small></div>
+  <div class="stat"><b id="hScore">0</b><small>SCORE</small></div>
+  <div class="stat"><b id="hRings">0</b><small>RINGS</small></div>
+  <div class="stat"><b id="hFlips">0</b><small>FLIPS</small></div>
+  <div class="gas"><small>GAS</small><div><i id="hGas"></i></div></div>
+</div>
+<div id="lights"><span class="lt"></span><span class="lt"></span><span class="lt"></span><span class="lt"></span></div>
+<div id="toast"></div>
+<div id="title" class="panel"><h1>ROADSTER<br>LOOP</h1>
+  <p>Wait for green. Hit the ramp. Flip, thrust, stick the landing.</p>
+  <p class="keys"><b>Space / tap</b> launch &amp; thrust &nbsp; <b>← →</b> rotate</p>
+  <button id="bStart">Start</button></div>
+<div id="results" class="panel hidden"><div id="grade">A</div><div id="rScore">0</div><div id="badge" class="hidden">NEW BEST!</div>
+  <div id="rTitle"></div><div class="grid" id="rGrid"></div><button id="bAgain">Run it again</button></div>
+<div id="touch"><button id="bl">⟲</button><button id="bt">THRUST</button><button id="br">⟳</button></div>
+<footer>Unofficial fan game, not affiliated with Tesla. · <a href="privacy.html">Privacy</a> · Best: <span id="best">0</span></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script>
+</body></html>
